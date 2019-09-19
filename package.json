@@ -1,5 +1,5 @@
 {
-  "name": "react-native-confetti",
+  "name": "native-confetti",
   "version": "1.0.0",
   "description": "react-native confetti with native animation",
   "main": "build/index.js",
