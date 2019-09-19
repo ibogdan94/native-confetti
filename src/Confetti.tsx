@@ -9,7 +9,7 @@ interface Props {
     opacity: Animated.AnimatedInterpolation;
 }
 
-export const Confetti = (props: Props): JSX.Element => {
+export const Confetti: React.FunctionComponent<Props> = (props: Props): JSX.Element => {
     const width: number = randomValue(8, 16);
     const height: number = randomValue(6, 12);
     const isRounded: boolean = Math.round(randomValue(0, 1)) === 1;

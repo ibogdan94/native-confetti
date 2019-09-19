@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, FunctionComponent } from "react";
 import { Animated, Dimensions, Easing } from "react-native";
 
 import { Confetti } from "./Confetti";
@@ -32,11 +32,11 @@ export interface ExplosionProps {
     fadeOut?: boolean;
 }
 
-export const Explosion: React.FunctionComponent<ExplosionProps> = (props: ExplosionProps): JSX.Element => {
+export const Explosion: FunctionComponent<ExplosionProps> = (props: ExplosionProps): JSX.Element => {
     const animation: Animated.Value = new Animated.Value(0);
     const [ items, setItems ] = useCallbackState([] as Array<Item>);
 
-    React.useEffect(() => {
+    useEffect(() => {
         calculateItems();
     }, []);
 

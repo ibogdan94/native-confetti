@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from "react-native";
+import { useEffect, useState, useRef } from "react";
 
 export function useCallbackState<S>(defaultState: S): [S, any] {
     const [value, setValue] = useState(defaultState);
     const firstMount = useRef(true);
-    const callback = useRef();
+    const callback = useRef<any>(null);
 
     const setState = (state: S, fn: any): void => {
         setValue(state);
