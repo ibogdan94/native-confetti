@@ -1,6 +1,6 @@
 {
   "name": "native-confetti",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-native confetti with native animation",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
