@@ -1,0 +1,17 @@
+{
+  "name": "react-native-confetti",
+  "version": "1.0.0",
+  "description": "react-native confetti with native animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "confetti",
+    "ts"
+  ],
+  "author": "Vincent Catillon, Bogdan Ivanov",
+  "license": "ISC"
+}
