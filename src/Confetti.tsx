@@ -9,28 +9,24 @@ interface Props {
     opacity: Animated.AnimatedInterpolation;
 }
 
-class Confetti extends React.PureComponent<Props> {
-    protected width: number = randomValue(8, 16);
-    protected height: number = randomValue(6, 12);
-    protected isRounded: boolean = Math.round(randomValue(0, 1)) === 1;
-    protected backgroundColor: string = this.props.color;
+export const Confetti = (props: Props): JSX.Element => {
+    const width: number = randomValue(8, 16);
+    const height: number = randomValue(6, 12);
+    const isRounded: boolean = Math.round(randomValue(0, 1)) === 1;
+    const {transform, opacity, color} = props;
 
-    public render(): React.ReactNode {
-        const { transform, opacity } = this.props;
+    const style = {
+        width,
+        height,
+        backgroundColor: color,
+        transform,
+        opacity
+    };
 
-        const style = {
-            width: this.width,
-            height: this.height,
-            backgroundColor: this.backgroundColor,
-            transform,
-            opacity
-        };
-
-        return (
-            <Animated.View style={ [styles.confetti, this.isRounded && styles.rounded, style] }/>
-        );
-    }
-}
+    return (
+        <Animated.View style={[ styles.confetti, isRounded && styles.rounded, style ]}/>
+    );
+};
 
 const styles = StyleSheet.create({
     confetti: {
@@ -40,5 +36,3 @@ const styles = StyleSheet.create({
         borderRadius: 100
     },
 });
-
-export default Confetti;
