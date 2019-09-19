@@ -9,7 +9,7 @@
     "lint": "./node_modules/.bin/tslint --project .",
     "prepublishOnly": "npm run lint && npm run build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.60.5"
   },
