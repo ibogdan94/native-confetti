@@ -1,6 +1,6 @@
 {
   "name": "native-confetti",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react-native confetti with native animation",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
@@ -19,6 +19,7 @@
     "@babel/plugin-transform-classes": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/prop-types": "^15.7.2",
     "@types/react": "^16.9.2",
     "@types/react-native": "^0.60.15",
     "awesome-typescript-loader": "^5.2.1",
@@ -27,6 +28,8 @@
     "clean-webpack-plugin": "^3.0.0",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-native": "^0.60.5",
     "source-map": "^0.7.3",
     "source-map-loader": "^0.2.4",
     "tslint": "5.20.0",
@@ -34,9 +37,7 @@
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-node-externals": "^1.7.2",
-    "react": "^16.9.0",
-    "react-native": "^0.60.5"
+    "webpack-node-externals": "^1.7.2"
   },
   "keywords": [
     "react",
