@@ -1,4 +1,4 @@
-import { Explosion } from "./Explosion";
+import { Explosion } from "./Confetti/Explosion";
 
 export {
     Explosion
