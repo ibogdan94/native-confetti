@@ -1,7 +1,7 @@
 {
   "name": "native-confetti",
   "version": "1.0.7",
-  "description": "React-native confetti with native animation",
+  "description": "React Native confetti with native driver animation",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
