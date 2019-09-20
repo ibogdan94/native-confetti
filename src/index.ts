@@ -1,5 +1,1 @@
-import { Explosion } from "./Confetti/Explosion";
-
-export {
-    Explosion
-}
+export *from "./Confetti/Explosion";

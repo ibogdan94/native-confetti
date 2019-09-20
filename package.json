@@ -1,10 +1,11 @@
 {
   "name": "native-confetti",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react-native confetti with native animation",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
+    "test": "node -v",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack --mode production --config=./webpack.config.js",
     "lint": "./node_modules/.bin/tslint --project .",
     "prepublishOnly": "npm run lint && npm run build"
@@ -44,5 +45,9 @@
     "ts"
   ],
   "author": "Vincent Catillon, Bogdan Ivanov",
-  "license": "ISC"
+  "license": "ISC",
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
