@@ -1,7 +1,7 @@
 {
   "name": "native-confetti",
-  "version": "1.0.6",
-  "description": "react-native confetti with native animation",
+  "version": "1.0.7",
+  "description": "React-native confetti with native animation",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
@@ -39,16 +39,24 @@
     "webpack-cli": "^3.3.9",
     "webpack-node-externals": "^1.7.2"
   },
-  "keywords": [
-    "react",
-    "react-native",
-    "confetti",
-    "ts"
-  ],
-  "author": "Vincent Catillon, Bogdan Ivanov",
-  "license": "ISC",
   "pre-commit": [
     "lint",
     "test"
-  ]
+  ],
+  "keywords": [
+    "react",
+    "react-native",
+    "ios",
+    "android",
+    "react-native-confetti",
+    "confetti",
+    "ts",
+    "animation",
+    "animated"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibogdan94/native-confetti/issues"
+  },
+  "homepage": "https://github.com/ibogdan94/native-confetti"
 }
